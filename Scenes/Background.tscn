@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8s2ti07q860h"]
+
+[ext_resource type="Texture2D" uid="uid://beu0y1uuimxxt" path="res://Assets/Art/Background/Sky.png" id="1_ma6s4"]
+[ext_resource type="Texture2D" uid="uid://u6yt0jpbuuc0" path="res://Assets/Art/Background/Ground.png" id="2_7aa4i"]
+
+[node name="Background" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Sky"]
+position = Vector2(905.556, 326)
+scale = Vector2(0.603704, 0.603704)
+texture = ExtResource("1_ma6s4")
+
+[node name="Ground" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Ground"]
+position = Vector2(907.557, 327)
+scale = Vector2(0.605038, 0.605556)
+texture = ExtResource("2_7aa4i")

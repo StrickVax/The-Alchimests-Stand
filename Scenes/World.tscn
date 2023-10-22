@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://c4bx72e27duou"]
+[gd_scene load_steps=3 format=3 uid="uid://c4bx72e27duou"]
+
+[ext_resource type="PackedScene" uid="uid://b8s2ti07q860h" path="res://Scenes/Background.tscn" id="1_csab3"]
+[ext_resource type="PackedScene" uid="uid://b4brggxkbteuq" path="res://Scenes/GUI.tscn" id="1_nwnh1"]
 
 [node name="World" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_csab3")]
+visible = false
+
+[node name="GUI" parent="." instance=ExtResource("1_nwnh1")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
