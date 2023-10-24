@@ -12,16 +12,10 @@ grow_vertical = 2
 
 [node name="BoxContainer" type="BoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.075
-anchor_top = 0.13
-anchor_right = 0.244
-anchor_bottom = 0.43
-offset_left = -0.400002
-offset_top = -0.240005
-offset_right = 764.912
-offset_bottom = 535.36
+offset_right = 974.0
+offset_bottom = 974.0
 scale = Vector2(0.2, 0.2)
+pivot_offset = Vector2(100, 100)
 
 [node name="Sprite2D" type="TextureRect" parent="BoxContainer"]
 layout_mode = 2
