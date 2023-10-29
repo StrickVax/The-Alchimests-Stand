@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://4m827q44vk12"]
+
+[ext_resource type="Script" path="res://HealthBar.gd" id="1_8gcv0"]
+[ext_resource type="Texture2D" uid="uid://i21j5gv3jx31" path="res://Assets/Art/Textures/RedTexture.tres" id="2_j8duh"]
+
+[sub_resource type="Gradient" id="Gradient_td6qb"]
+offsets = PackedFloat32Array(0.912281, 0.973684, 0.986842, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 0.439216, 0, 0, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jsvef"]
+gradient = SubResource("Gradient_td6qb")
+
+[node name="HealthBar" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_8gcv0")
+
+[node name="Fill" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 256.0
+grow_vertical = 2
+texture = ExtResource("2_j8duh")
+
+[node name="Background" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 256.0
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_jsvef")

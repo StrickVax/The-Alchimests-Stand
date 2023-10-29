@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://rity45fgeu1h"]
+
+[ext_resource type="Script" path="res://TestScene.gd" id="1_uvr3j"]
+[ext_resource type="PackedScene" uid="uid://bjxg8m2icf71k" path="res://Assets/Art/Textures/enemy_test_health.tscn" id="2_aedmr"]
+
+[node name="TestScene" type="Node"]
+script = ExtResource("1_uvr3j")
+
+[node name="Enemy" parent="." instance=ExtResource("2_aedmr")]
+
+[node name="Damage" type="Button" parent="."]
+offset_left = 641.0
+offset_top = 165.0
+offset_right = 713.0
+offset_bottom = 196.0
+text = "Damage
+"
+
+[node name="Heal" type="Button" parent="."]
+offset_left = 631.0
+offset_top = 31.0
+offset_right = 674.0
+offset_bottom = 62.0
+text = "Heal"
