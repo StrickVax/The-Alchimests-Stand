@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjtpxil5f8iyx"]
+
+[ext_resource type="Script" path="res://testingsolo/Health_Component.gd" id="1_1tju8"]
+[ext_resource type="PackedScene" uid="uid://4m827q44vk12" path="res://testingsolo/health_bar.tscn" id="2_m37ho"]
+
+[node name="HealthComponent" type="Node2D" node_paths=PackedStringArray("health_bar")]
+script = ExtResource("1_1tju8")
+health_bar = NodePath("HealthBar")
+
+[node name="HealthBar" parent="." instance=ExtResource("2_m37ho")]

@@ -1,4 +1,5 @@
 extends Node2D
+class_name Health_Bar
 
 @onready var fill = %Fill
 @onready var background = %Background

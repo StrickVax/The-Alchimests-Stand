@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://rity45fgeu1h"]
 
-[ext_resource type="Script" path="res://TestScene.gd" id="1_uvr3j"]
-[ext_resource type="PackedScene" uid="uid://bjxg8m2icf71k" path="res://Assets/Art/Textures/enemy_test_health.tscn" id="2_aedmr"]
+[ext_resource type="Script" path="res://testingsolo/TestScene.gd" id="1_uvr3j"]
+[ext_resource type="PackedScene" uid="uid://bjxg8m2icf71k" path="res://testingsolo/enemy_test_health.tscn" id="2_aedmr"]
 
 [node name="TestScene" type="Node"]
 script = ExtResource("1_uvr3j")

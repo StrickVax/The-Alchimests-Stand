@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjxg8m2icf71k"]
+
+[ext_resource type="Script" path="res://Scripts/Enemies/Wasp.gd" id="1_0bjel"]
+[ext_resource type="Script" path="res://testingsolo/Hitbox_Component.gd" id="1_hqtmx"]
+[ext_resource type="Texture2D" uid="uid://ejq5tytbxsr5" path="res://Assets/Art/Items/Rocket.png" id="1_kwfpj"]
+[ext_resource type="PackedScene" uid="uid://cjtpxil5f8iyx" path="res://health_component.tscn" id="3_7ul5o"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_kwfpj")
+script = ExtResource("1_hqtmx")
+
+[node name="HealthComponent" parent="Sprite2D" instance=ExtResource("3_7ul5o")]
+
+[node name="Enemy" type="Node2D" parent="."]
+script = ExtResource("1_0bjel")
